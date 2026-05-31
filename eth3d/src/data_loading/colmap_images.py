@@ -40,7 +40,6 @@ def parse_metadata_line(line: str) -> tuple:
     return image_id, qvec, tvec, camera_id, name
     
     
-
 def parse_points2d_line(line: str) -> np.ndarray:
     """
     Parse a COLMAP POINTS2D line, within the images.txt file.

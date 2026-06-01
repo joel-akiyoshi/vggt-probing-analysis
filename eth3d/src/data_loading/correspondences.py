@@ -142,7 +142,7 @@ def get_correspondences(
 
 
 def get_all_image_pair_correspondences(
-    images: Dict[ImageId, object],
+    images: Dict[ImageId, ImageRecord],
     min_matches: int = 0,
 ) -> Dict[Tuple[ImageId, ImageId], CorrespondenceResult]:
     """
@@ -183,7 +183,7 @@ def get_all_image_pair_correspondences(
 
 
 def print_correspondence_summary(
-    images: Dict[ImageId, object],
+    images: Dict[ImageId, ImageRecord],
     pair_correspondences: Dict[Tuple[ImageId, ImageId], CorrespondenceResult],
     max_pairs: int = 10,
 ) -> None:

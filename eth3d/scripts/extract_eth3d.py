@@ -12,5 +12,4 @@ def unzip_7z(archive_path, output_dir):
         print(f"An error occurred: {e}")
 
 # Usage
-unzip_7z('multi_view_training_dslr_scan_eval.7z', 'eval_gt')
 unzip_7z('multi_view_training_dslr_undistorted.7z', 'highres_train')

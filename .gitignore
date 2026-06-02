@@ -149,4 +149,4 @@ skyseg.onnx
 *.egg-info
 
 # eth3d dataset
-eth3d/highres_train/
+probing_experiment/data/highres_train/

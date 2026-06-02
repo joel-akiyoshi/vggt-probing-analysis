@@ -150,3 +150,5 @@ skyseg.onnx
 
 # eth3d dataset
 probing_experiment/data/highres_train/
+probing_experiment/outputs/
+*.7z

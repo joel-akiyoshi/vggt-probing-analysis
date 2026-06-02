@@ -8,9 +8,9 @@ dependencies = [
     "safetensors",
     "opencv-python",
 ]
-name = "vggt"
+name = "vggt-probing-analysis"
 requires-python = ">= 3.10"
-version = "0.0.1"
+version = "0.1.0"
 
 [project.optional-dependencies]
 demo = [
@@ -33,9 +33,11 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 # setuptools configuration
+[tool.setuptools]
+package-dir = {"" = "probing_experiment/src"}
+
 [tool.setuptools.packages.find]
-where = ["."]
-include = ["vggt*"]
+where = ["probing_experiment/src"]
 
 # Pixi configuration
 [tool.pixi.workspace]

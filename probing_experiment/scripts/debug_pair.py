@@ -39,7 +39,7 @@ def main():
 
     verify_vggt_outputs(images, predictions, activation_cache)
 
-    out_dir = Path("../outputs/vggt_debug_outputs")
+    out_dir = Path("outputs/vggt_debug_outputs")
     save_vggt_pointcloud_ply(
         predictions,
         out_dir / f"pair_{image_1_id}_{image_2_id}_vggt_world_points.ply",

@@ -68,7 +68,8 @@ class Aggregator(nn.Module):
         qk_norm=True,
         rope_freq=100,
         init_values=0.01,
-        cached_layer_indices: Tuple[int, ...] = (4, 11, 17, 23),
+        # cached_layer_indices: Tuple[int, ...] = (4, 11, 17, 23), NOTE that these indices must be cached for DPT head to work properly
+        cached_layer_indices: Tuple[int, ...] = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23),
     ):
         super().__init__()
 

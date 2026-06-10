@@ -15,10 +15,10 @@ Point3DId = int
 #     (image_id, x, y)
 Observation = Tuple[ImageId, float, float]
 
-# A pairwise correspondence output is:
-#     pts1: np.ndarray of shape (N, 2)
-#     pts2: np.ndarray of shape (N, 2)
-#     point3d_ids: np.ndarray of shape (N,)
+# A correspondence result is:
+# pts1: np.ndarray of shape (N, 2)
+# pts2: np.ndarray of shape (N, 2)
+# point3d_ids: np.ndarray of shape (N,)
 CorrespondenceResult = Tuple[np.ndarray, np.ndarray, np.ndarray]
 
 

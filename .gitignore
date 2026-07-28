@@ -152,3 +152,7 @@ skyseg.onnx
 probing_experiment/data/highres_train/
 probing_experiment/outputs/
 *.7z
+
+.vscode/
+.gradio/
+input_images_*/
